@@ -1,0 +1,78 @@
+Finished Parsing the KB
+Finished Parsing the QUERY
+append(cons(1, cons(2, [])), cons(3, cons(4, [])), C199)
+
+
+Depth: 0
+Solving goal: append(cons(1, cons(2, [])), cons(3, cons(4, [])), C199)
+Depth: 0
+goal: append(cons(1, cons(2, [])), cons(3, cons(4, [])), C199)
+match: append(cons(X204, A205), B206, cons(X204, C203))
+Unifier:
+X204 :1
+A205 :cons(2, [])
+B206 :cons(3, cons(4, []))
+C199 :cons(X204, C203)
+
+
+NEW GOALS:
+append(cons(2, []), cons(3, cons(4, [])), C203)
+
+
+Depth: 1
+Solving goal: append(cons(2, []), cons(3, cons(4, [])), C203)
+Depth: 1
+goal: append(cons(2, []), cons(3, cons(4, [])), C203)
+match: append(cons(X209, A210), B211, cons(X209, C208))
+Unifier:
+X204 :1
+A205 :cons(2, [])
+B206 :cons(3, cons(4, []))
+C199 :cons(X204, C203)
+X209 :2
+A210 :[]
+B211 :cons(3, cons(4, []))
+C203 :cons(X209, C208)
+
+
+NEW GOALS:
+append([], cons(3, cons(4, [])), C208)
+
+
+Depth: 2
+Solving goal: append([], cons(3, cons(4, [])), C208)
+Depth: 2
+goal: append([], cons(3, cons(4, [])), C208)
+match: append([], B212, B212)
+Unifier:
+X204 :1
+A205 :cons(2, [])
+B206 :cons(3, cons(4, []))
+C199 :cons(X204, C203)
+X209 :2
+A210 :[]
+B211 :cons(3, cons(4, []))
+C203 :cons(X209, C208)
+B212 :cons(3, cons(4, []))
+C208 :B212
+
+
+All Goals Solved!!
+
+
+MGU:
+X204 : 1
+A205 : cons(2, [])
+B206 : cons(3, cons(4, []))
+C199 : cons(X204, C203)
+X209 : 2
+A210 : []
+B211 : cons(3, cons(4, []))
+C203 : cons(X209, C208)
+B212 : cons(3, cons(4, []))
+C208 : B212
+
+
+C = [1, 2, 3, 4]
+User chose to continue
+True
